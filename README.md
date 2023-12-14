@@ -55,7 +55,8 @@ Please use the following hyper-parameters to attain our results reported in Tabl
 <img src='docs/parameters.png' width=600>
 
 ## Acknowledgement
-Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation) and [FTD](https://github.com/AngusDujw/FTD-distillation).
+Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation).
+
 ## Citation
 If you find our code useful for your research, please cite our paper.
 ```
