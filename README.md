@@ -13,7 +13,7 @@ Compared to the training trajectory matching (MTT) based frameworks, our method 
 
 <img src='docs/memory_and_Parallelizability.png' width=800>
 
-Moreover, our method also exhibits an interesting and practical **parallelizability for dataset distillation**. Specifically, it can divide the generation of a synthetic dataset and allocate it to multiple workers for parallel execution without compromising effectiveness. 
+Moreover, our method also exhibits an interesting and practical **parallelizability for dataset distillation**. That is, it can divide the generation of a synthetic dataset and allocate it to multiple workers for parallel execution without compromising effectiveness. Please refer to our paper for more details.
 
 ### Getting Started
 
