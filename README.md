@@ -43,7 +43,6 @@ There is an example in the ```./template.sh```
 ### Adversarial Prediction Matching 
 The following command will then use the well-trained teachers we just generated to distill CIFAR-10 down to just 50 image per class:
 ```bash
-CUDA_VISIBLE_DEVICES=6 \
 python distill.py --model ConvNet --dataset CIFAR10 --zca --loss l1 --eval_mode ccc  \
 --lr_img 1 --ipc 50 --s_epoch 250 --lr_net 0.02 --epoch_eval_train 1000 --num_eval 5 --soft_lab --mid_gap 2 --ce 0.1 \
 --data_path=your_data_path
