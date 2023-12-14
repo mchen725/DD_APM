@@ -3,6 +3,17 @@
 
 This repo contains official code for the paper "[Dataset Distillation via Adversarial Prediction Matching]( )". 
 
+Dataset distillation is the technique of synthesizing smaller condensed datasets from large original datasets while retaining necessary information to persist the effect.
+
+In this paper, we approach the dataset distillation problem from a novel perspective: we regard minimizing the prediction discrepancy on the real data distribution between models, which are respectively trained on the large original dataset and on the small distilled dataset, as a conduit for condensing information from the raw data into the distilled version. An adversarial framework is proposed to solve the problem efficiently.
+
+<img src='docs/outline.png' width=600>
+
+Compared to the training trajectory matching (MTT) based frameworks, our method has three primary advantages: 1. It imitates the converged teachers’ prediction, avoiding short-sightedness on local trajectories; 2. Synthetic samples are updated by a single-level loss function, significantly enhancing memory complexity; 3. It requires only one well-trained teacher rather than all the snapshots alongside the training, markedly diminishing storage overhead. This enables our method to require only **2.5× less memory** and **5× less runtime** than [TESLA](https://proceedings.mlr.press/v202/cui23e.html) for distilling ImageNet-1K. 
+
+<img src='docs/memory_and_Parallelizability.png' width=800>
+
+Moreover, our method also exhibits an interesting and practical **parallelizability for dataset distillation**. Specifically, it can divide the generation of a synthetic dataset and allocate it to multiple workers for parallel execution without compromising effectiveness. 
 
 ### Getting Started
 
@@ -42,3 +53,11 @@ More examples for distilling other datasets with different IPCs can be found in 
 
 Please use the following hyper-parameters to attain our results reported in Table 1 of the paper:
 <img src='docs/parameters.png' width=600>
+
+## Acknowledgement
+Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation) and [FTD](https://github.com/AngusDujw/FTD-distillation).
+## Citation
+If you find our code useful for your research, please cite our paper.
+```
+
+```
