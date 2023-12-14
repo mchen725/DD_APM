@@ -52,7 +52,7 @@ python distill.py --model ConvNet --dataset CIFAR10 --zca --loss l1 --eval_mode 
 More examples for distilling other datasets with different IPCs can be found in the ```./template.sh```
 
 Please use the following hyper-parameters to attain our results reported in Table 1 of the paper:
-<img src='docs/parameters.png' width=600>
+<img src='docs/parameters.png' width=800>
 
 ## Acknowledgement
 Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillation).
