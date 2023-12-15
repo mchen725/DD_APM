@@ -1,7 +1,7 @@
 # Dataset Distillation via Adversarial Prediction Matching
 
 
-This repo contains official code for the paper "[Dataset Distillation via Adversarial Prediction Matching]( )". 
+This repo contains official code for the paper "[Dataset Distillation via Adversarial Prediction Matching](https://arxiv.org/abs/2312.08912)". 
 
 Dataset distillation is the technique of synthesizing smaller condensed datasets from large original datasets while retaining necessary information to persist the effect.
 
@@ -59,5 +59,12 @@ Our code is built upon [MTT](https://github.com/GeorgeCazenavette/mtt-distillati
 ## Citation
 If you find our code useful for your research, please cite our paper.
 ```
-
+@misc{chen2023dataset,
+      title={Dataset Distillation via Adversarial Prediction Matching}, 
+      author={Mingyang Chen and Bo Huang and Junda Lu and Bing Li and Yi Wang and Minhao Cheng and Wei Wang},
+      year={2023},
+      eprint={2312.08912},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
