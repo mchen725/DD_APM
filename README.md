@@ -20,7 +20,7 @@ Moreover, our method also exhibits an interesting and practical **parallelizabil
 First, create the conda virtual enviroment
 
 ```bash
-conda env create -f enviroment.yaml
+conda env create -f environment.yaml
 ```
 
 You can then activate your  conda environment with
